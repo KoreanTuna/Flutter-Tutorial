@@ -12,10 +12,27 @@ lib 폴더 안에 있는 `main.dart`의
 void main() {
   runApp(const MainApp());
 }
+
+class MainApp extends StatelessWidget {
+  const MainApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return const MaterialApp(
+      home: Scaffold(
+        body: Center(
+          child: Text('Hello World!'),
+        ),
+      ),
+    );
+  }
+}
+
 ```
 
 가 서비스의 시작지점이 됩니다.
 runApp에는 Flutter의 Widget이 들어가게 됩니다
+MaterialApp이 최상단에 있어야 위젯 트리의 구조를
 
 ## 의존성 관리
 
