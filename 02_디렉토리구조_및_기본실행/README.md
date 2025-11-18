@@ -64,3 +64,20 @@ flutter_directory_guide/analysis_options.yaml
 flutter_directory_guide/android // 안드로이드
 flutter_directory_guide/ios // IOS
 ```
+
+## 실행명렁
+
+아래 이미지처럼 실행 json만들어서 Run and Debug 버튼으로 실행가능
+(디버그 툴 사용가능해짐)
+![alt text](image.png)
+
+디버그 툴 빌드 없이 가볍게 실행을 원한다면
+
+```bash
+flutter run
+```
+
+위 명령어 터미널에 입력해서 실행 가능
+아래처럼 나오는데, 원하는 번호 입력시 해당 디바이스로 빌드 시작
+
+![alt text](image-1.png)
