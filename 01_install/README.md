@@ -1,5 +1,5 @@
 # Flutter Install(Mac OS)
-
+https://krapi.teamblind.com/auth/web/email?k=O2A6apOpgLTwDBxc2EKoO5ejhELF5i3dFmCPOs48UfZeUhaib2aCzNpU5RTSpYkDzH7Nee&lang=ko
 [Flutter Install 링크](https://docs.flutter.dev/install/manual).
 
 ### 함께 설치해야할 것 들
