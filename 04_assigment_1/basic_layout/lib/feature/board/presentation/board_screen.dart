@@ -12,27 +12,35 @@ class BoardScreen extends StatelessWidget {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Column(
-            children: [
-              Image.network(
-                imageUrl,
-                height: 360,
-                fit: BoxFit.cover,
-              ),
-              const SizedBox(height: 16),
-              const _ItemRowWidget(
-                title: 'Board Title',
-                description: 'board item.',
-              ),
-              const _ItemRowWidget(
-                title: 'ID',
-                description: 'N/A',
-              ),
-              const _ItemRowWidget(
-                title: 'Assigned',
-                description: 'N/A',
-              ),
-            ],
+          Expanded(
+            child: Column(
+              children: [
+                Image.network(
+                  imageUrl,
+                  height: 360,
+                  fit: BoxFit.cover,
+                ),
+                const SizedBox(height: 16),
+                const Expanded(
+                  child: SingleChildScrollView(
+                    padding: EdgeInsets.symmetric(horizontal: 24, vertical: 24),
+                    physics: AlwaysScrollableScrollPhysics(),
+                    child: Column(
+                      children: [
+                        _ItemRowWidget(
+                          title: 'Board Title',
+                          description: 'board item.',
+                        ),
+                      ],
+                    ),
+                  ),
+                ),
+
+                // ListView(
+                //   children: [],
+                // ),
+              ],
+            ),
           ),
           Padding(
             padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 48),
