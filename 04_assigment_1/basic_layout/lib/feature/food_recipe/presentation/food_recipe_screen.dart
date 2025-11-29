@@ -18,6 +18,18 @@ class FoodRecipeScreen extends StatefulWidget {
 }
 
 class _FoodRecipeScreenState extends State<FoodRecipeScreen> {
+  /// stateful widget에서만 사용 가능한 setState!
+  /// 현재 화면을 재빌드하는 역할을 한다.
+  /// stateful 위젯을 만들때는 stf만 입력하면 추천 스닙펫이 나온다.
+  ///
+  ///
+  /// setState를 제거하고,
+  /// widget.viewModel.addRecipe(newRecipe: newRecipe);
+  /// 함수만 호출하면 화면이 재빌드되지 않아, UI가 갱신되지 않는다.
+  ///
+  /// 따라서, setState를 사용하여 상태 변화를 알리고, 화면을 재빌드해야 한다.
+  ///
+
   void addRecipe({required RecipeEntity newRecipe}) {
     setState(() {
       widget.viewModel.addRecipe(newRecipe: newRecipe);
