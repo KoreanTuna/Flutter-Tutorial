@@ -81,6 +81,7 @@ class _FoodRecipeScreenState extends State<FoodRecipeScreen> {
                     },
                   ),
                   const SizedBox(height: 24),
+
                   Expanded(
                     child: ListView.separated(
                       padding: const EdgeInsets.symmetric(

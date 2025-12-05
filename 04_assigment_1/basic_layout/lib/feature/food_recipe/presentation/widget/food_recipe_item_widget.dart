@@ -35,6 +35,20 @@ class FoodRecipeItemWidget extends StatelessWidget {
           Image.network(
             item.imageUrl,
             fit: BoxFit.cover,
+            errorBuilder: (context, error, stackTrace) {
+              return SizedBox(
+                width: 80,
+                height: 80,
+                child: Icon(Icons.error),
+              );
+            },
+            loadingBuilder: (context, child, loadingProgress) {
+              return SizedBox(
+                width: 80,
+                height: 80,
+                child: Align(child: CircularProgressIndicator()),
+              );
+            },
             width: 80,
             height: 80,
             frameBuilder: (context, child, frame, wasSynchronouslyLoaded) {

@@ -8,7 +8,7 @@ class FoodRecipeViewModel {
   List<RecipeEntity> demoRecipe = [
     RecipeEntity(
       imageUrl:
-          'https://images.unsplash.com/photo-1504674900247-0877df9cc836?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Zm9vZCUyMHJlc3RhdXJhbnR8ZW58MHx8MHx8fDA%3D&w=1000&q=80',
+          'https://images.unsplash.com/photo-1504674900247-0f9cc836?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Zm9vZCUyMHJlc3RhdXJhbnR8ZW58MHx8MHx8fDA%3D&w=1000&q=80',
       title: 'Spaghetti Carbonara',
       description:
           'A classic Italian pasta dish made with eggs, cheese, pancetta, and pepper.',
@@ -24,7 +24,7 @@ class FoodRecipeViewModel {
     ),
     RecipeEntity(
       imageUrl:
-          'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQA6hlx_0b1CMp1IFbilMYVROI9bRhZmJbGUQ&s',
+          'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQA6hlx_0rCMp1IFbilMYVROI9bRhZmJbGUQ&s',
       title: 'Cheesecake',
       description:
           'A rich and creamy dessert made with cream cheese, sugar, and a graham cracker crust.',
