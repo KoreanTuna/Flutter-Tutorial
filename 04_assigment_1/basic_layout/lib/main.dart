@@ -1,4 +1,4 @@
-import 'package:basic_layout/feature/text_input/text_input_screen.dart';
+import 'package:basic_layout/feature/car/car_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -11,7 +11,7 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: TextInputScreen(),
+      home: CarScreen(),
     );
   }
 }
