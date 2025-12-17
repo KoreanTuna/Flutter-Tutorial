@@ -1,4 +1,5 @@
 import 'package:basic_layout/feature/car/presentation/car_screen.dart';
+import 'package:basic_layout/feature/car/presentation/car_screen_2.dart';
 import 'package:basic_layout/feature/car/presentation/view_model/car_view_model.dart';
 import 'package:flutter/material.dart';
 
@@ -12,9 +13,7 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: CarScreen(
-        viewModel: CarViewModel(),
-      ),
+      home: CarScreen2(),
     );
   }
 }
