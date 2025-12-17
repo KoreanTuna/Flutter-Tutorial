@@ -72,7 +72,7 @@ class _CarItemWidget extends StatelessWidget {
                   ),
                   Chip(
                     backgroundColor: inCart
-                        ? Colors.black
+                        ? Colors.indigo
                         : Colors.grey.shade200,
                     label: Text(
                       inCart ? '담김' : '담기',
